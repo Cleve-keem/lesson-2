@@ -4,13 +4,15 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "css": "tailwindcss build -i src/input.css -o public/style.css -w"
+    "css": "tailwindcss build -i src/input.css -o public/style.css -w",
+    "prettier": "npx prettier --write ./**/*.html"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
   "devDependencies": {
+    "prettier-plugin-tailwindcss": "^0.5.14",
     "tailwindcss": "^3.4.3"
   }
 }
