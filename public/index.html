@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang="en" class="sm:scroll-smooth">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <script src="script.js" defer></script>
+    <title>RocketSpace</title>
 </head>
 <body class="min-h-screen bg-slate-50 dark:bg-black dark:text-white">
     <header class="p-4 bg-teal-700 text-white sticky top-0 z-10">
@@ -13,15 +14,27 @@
                 <a href="#hero">Keem</a>
             </h1>
             <div>
-                <button id="mobile-open-button" class="sm:hidden text-3xl focus:outline-none">
+                <button id="hamburger-button" class="md:hidden text-3xl cursor-pointer">
                     &#9776;
                 </button>
-                <nav class="hidden sm:block space-x-8 text-xl" aria-label="main">
+                <nav class="hidden md:block space-x-8 text-xl" aria-label="main">
                     <a href="#rockets" class="hover:opacity-90">Our Rocket</a>
                     <a href="#testimonials" class="hover:opacity-90">Testimonials</a>
                     <a href="#contact" class="hover:opacity-90">Contact Us</a>
                 </nav>
             </div>
+        </section>
+        <section id="mobile-menu" class="w-full bg-black absolute left-0 top-0 text-5xl flex-col justify-content-center origin-top animate-open-menu hidden">
+            <button class="text-5xl self-end px-6">
+                &times;
+            </button>
+            <nav class="flex flex-col items-center min-h-screen gap-8 py-8">
+                <a href="#hero" class="py-6 hover:opacity-90">Home</a>
+                <a href="#rockets" class="py-6 hover:opacity-90">Our Rocket</a>
+                <a href="#testimonials" class="py-6 hover:opacity-90">Testimonials</a>
+                <a href="#contact" class="py-6 hover:opacity-90">Contact Us</a>
+                <a href="#footer" class="py-6 hover:opacity-90">Legal</a>
+            </nav>
         </section>
     </header>
     <main class="max-w-4xl mx-auto">
