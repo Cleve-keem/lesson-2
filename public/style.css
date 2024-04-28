@@ -663,16 +663,12 @@ video {
   inset-inline-end: 0.25rem;
 }
 
-.left-0 {
-  left: 0px;
-}
-
 .top-0 {
   top: 0px;
 }
 
-.bottom-0 {
-  bottom: 0px;
+.left-0 {
+  left: 0px;
 }
 
 .isolate {
@@ -864,10 +860,6 @@ video {
   min-height: 100vh;
 }
 
-.min-h-full {
-  min-height: 100%;
-}
-
 .w-1\/2 {
   width: 50%;
 }
@@ -983,7 +975,7 @@ video {
 }
 
 .animate-open-menu {
-  animation: open-menu 0.5 ease-in-out forwards;
+  animation: open-menu 0.5s ease-in-out forwards;
 }
 
 .cursor-pointer {
@@ -2218,8 +2210,8 @@ video {
   line-height: 1.75rem;
 }
 
-.text-8xl {
-  font-size: 6rem;
+.text-6xl {
+  font-size: 3.75rem;
   line-height: 1;
 }
 
@@ -2924,10 +2916,6 @@ video {
 
   .sm\:gap-2 {
     gap: 0.5rem;
-  }
-
-  .sm\:scroll-smooth {
-    scroll-behavior: smooth;
   }
 
   .sm\:text-left {
